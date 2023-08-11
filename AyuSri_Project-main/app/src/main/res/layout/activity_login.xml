@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupback">
+
+    <EditText
+        android:id="@+id/lemail"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="450dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/welcome"
+        android:backgroundTintMode="src_in"
+        android:hint="   E-mail"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="20dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lpassword"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/welcome"
+        android:backgroundTintMode="src_in"
+        android:hint="   Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingHorizontal="20dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemail" />
+
+    <Button
+        android:id="@+id/sigin"
+        android:layout_width="197dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/green4"
+        android:text="Sign In"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lpassword" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:layout_constraintEnd_toStartOf="@+id/lemail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/nav_menu" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Welcome Back"
+        android:textColor="@color/bob"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ccreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="112dp"
+        android:background="@color/green4"
+        android:text="New user?   Sign up here"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sigin" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="601dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
